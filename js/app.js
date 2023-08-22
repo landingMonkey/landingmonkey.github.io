@@ -2,22 +2,19 @@
 	
 	$(document).ready(function(){
 
-		// Cloning main navigation for mobile menu
-		$(".mobile-navigation").append($(".main-navigation .menu").clone());
+		$("[data-bg-color]").each(function(){
+			var color = $(this).data("bg-color");
+			$(this).css("background-color",color);
+		});
 
-		// Mobile menu toggle 
-		$(".menu-toggle").click(function(){
-			$(".mobile-navigation").slideToggle();
+		$("[data-bg-image]").each(function(){
+			var image = $(this).data("bg-image");
+			$(this).css("background-image","url("+image+")");
 		});
 	});
 
 	$(window).load(function(){
-		$(".feature-slider").flexslider({
-			directionNav: true,
-			controlNav: false,
-			prevText: '<i class="fa fa-angle-left"></i>',
-			nextText: '<i class="fa fa-angle-right"></i>',
-		});
+
 	});
 
 })(jQuery, document, window);

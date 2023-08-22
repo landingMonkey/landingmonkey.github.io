@@ -31,12 +31,14 @@
 
 // Converting PX value to EM based on browser-context variable
 // Usage: @include em(16)
+$browser-context: 15; // Default
+
 @mixin em($pixels, $context: $browser-context) {
 	font-size: #{$pixels}px;
 	font-size: #{$pixels/$context}em;
 }
 
-@mixin rem($pixels, $context: $browser-context) {
+@mixin em($pixels, $context: $browser-context) {
 	font-size: #{$pixels}px;
 	font-size: #{$pixels/$context}rem;
 }

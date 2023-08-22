@@ -1,16 +1,10 @@
-// Font family
-$primary-font      : "Roboto", "Open Sans", sans-serif;
-$secondary-font    : "Roboto Slab", "Raleway", "Open Sans", serif;
+// Font family Variables
+$primary-font    : "Titillium Web", "Roboto Condensed", "Open Sans", sans-serif;
 
 
 // Color Variables
-$accent-color      : #b79e69;
-$primary-color     : $accent-color;
-$secondary-color   : #262322;
+$primary-color   : #2f2e3c;
+$secondary-color : #ebebeb;
 
-$strong-color      : #54504e;
-$body-color        : #7b7674;
-
-// Grid system
-$grid-columns      : 12 !default;
-$grid-gutter-width : 30px !default;
+$strong-color    : #5a595e;
+$body-color      : #7b7a82
